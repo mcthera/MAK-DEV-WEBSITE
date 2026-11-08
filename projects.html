@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photo Gallery & Build Log | Kwadwo Manu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body.projects-page { padding-top: 8rem; }
+        .page-header { text-align: center; color: #e8fbff; margin: 2rem 0 1rem; }
+    </style>
+</head>
+<body class="projects-page">
+    <header>
+        <a href="home.html" class="logo">MAK DEVELOPS</a>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="ABOUTPAGE.html">ABOUT</a>
+            <a href="projects.html" class="active" aria-current="page">GALLERY</a>
+            <a href="mainproject.html">MAIN PROJECTS</a>
+            <a href="CONTACT.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-header">Development Progress & Photo Gallery</h1>
+        <p style="text-align:center; color:rgba(255,255,255,0.85); margin-bottom:1.5rem; font-size:1.4rem;">
+            Click any image to expand. Upload new photos to your <code>pictures/</code> folder and replace the <code>src</code> attributes below!
+        </p>
+
+        <section class="gallery-section">
+            <div class="gallery" aria-live="polite">
+
+                <!-- Profile Avatar Artwork -->
+                <figure>
+                    <a href="pictures/manu.jpeg" target="_blank" rel="noopener">
+                        <img src="pictures/manu.jpeg" alt="Kwadwo Manu Avatar" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=CAMO+Avatar'">
+                    </a>
+                    <figcaption>Kwadwo Manu (CAMO Branding Avatar)</figcaption>
+                </figure>
+
+                <!-- Existing build steps -->
+                <figure>
+                    <a href="pictures/a.png" target="_blank" rel="noopener">
+                        <img src="pictures/a.png" alt="HTML Structural Layout" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=Image+A+Placeholder'">
+                    </a>
+                    <figcaption>#1: Initial HTML Structure Setup</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="pictures/b.png" target="_blank" rel="noopener">
+                        <img src="pictures/b.png" alt="CSS Application View" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=Image+B+Placeholder'">
+                    </a>
+                    <figcaption>#2: Styling Layout with Custom CSS</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="pictures/c.png" target="_blank" rel="noopener">
+                        <img src="pictures/c.png" alt="JavaScript Integration Progress" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=Image+C+Placeholder'">
+                    </a>
+                    <figcaption>#3: JavaScript & Dynamic Logic Integration</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="pictures/h.png" target="_blank" rel="noopener">
+                        <img src="pictures/h.png" alt="Borders & Shadows Polish" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=Image+H+Placeholder'">
+                    </a>
+                    <figcaption>#4: Adding Shadows, Glows & Glassmorphism</figcaption>
+                </figure>
+
+                <!-- PLACEHOLDERS FOR YOUR UPCOMING PICTURES -->
+                <figure>
+                    <a href="pictures/new-photo-1.jpg" target="_blank" rel="noopener">
+                        <img src="pictures/kwadwo.jpg" alt="Gallery Photo 1 Placeholder" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=Your+New+Picture+1'">
+                    </a>
+                    <figcaption>[ Slot 1: Replace with your picture ]</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="pictures/new-photo-2.jpg" target="_blank" rel="noopener">
+                        <img src="pictures/kwadwo2.jpg" alt="Gallery Photo 2 Placeholder" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=Your+New+Picture+2'">
+                    </a>
+                    <figcaption>[ Slot 2: Replace with your picture ]</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="pictures/new-photo-3.jpg" target="_blank" rel="noopener">
+                        <img src="pictures/boss.jpg" alt="Gallery Photo 3 Placeholder" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=Your+New+Picture+3'">
+                    </a>
+                    <figcaption>[ Slot 3: Replace with your picture ]</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="pictures/new-photo-4.jpg" target="_blank" rel="noopener">
+                        <img src="pictures/new-photo-4.jpg" alt="Gallery Photo 4 Placeholder" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300/19203a/0ed0ff?text=Your+New+Picture+4'">
+                    </a>
+                    <figcaption>[ Slot 4: Replace with your picture ]</figcaption>
+                </figure>
+
+            </div>
+        </section>
+    </main>
+     <canvas id="camo-canvas" aria-hidden="true"></canvas>
+     <script src="script.js"></script>
+</body>
+</html>
